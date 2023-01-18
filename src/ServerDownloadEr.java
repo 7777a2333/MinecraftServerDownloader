@@ -6,7 +6,7 @@ public class ServerDownloadEr {
     //Main主方法,程序的入口
     public static void main(String[] args) {
         System.out.println("服务端下载器  作者:哔哩哔哩@7777a2333");
-        System.out.println("开源地址:github.com/7777a2333/ServerDownloadEr");
+        System.out.println("开源地址:https://github.com/7777a2333/MinecraftServerDownloader");
         System.out.println("采用GNU GPLv3协议分发,并含有附加条款");
         System.out.println("原版服务端使用了mcjars.com跳转至Mojang服务器");
         System.out.println("CraftBukkit和Spigot使用了Getbukkit服务器下载");
@@ -38,7 +38,7 @@ public class ServerDownloadEr {
         } else {
             if (服务端类型 == 2) {
                 //如果服务端类型=2运行此处的代码(开始)
-                服务端下载链接 = "api.purpurmc.org/v2/purpur/" + 服务端版本 + "/latest/download";
+                服务端下载链接 = "https://api.purpurmc.org/v2/purpur/" + 服务端版本 + "/latest/download";
                 服务端名称 = "download";
                 //如果服务端类型=2运行此处的代码(结束)
             } else {
