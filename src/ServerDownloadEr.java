@@ -28,7 +28,7 @@ public class ServerDownloadEr {
         int 服务端类型 = 要求输入.nextInt();
         //要求输入服务端序号,并且放进"服务端类型"int变量内
         String 服务端下载链接;
-        String 服务端名称 = null;
+        String 服务端名称;
         //声明变量
         if (服务端类型 == 1) {
             //如果服务端类型=1运行此处的代码(开始)
@@ -42,14 +42,25 @@ public class ServerDownloadEr {
                 服务端名称 = "download";
                 //如果服务端类型=2运行此处的代码(结束)
             } else {
+                System.out.println("服务端版本是否小于或等于1.16.5?(是填true,否填false)");
+                boolean cdn = 要求输入.nextBoolean();
+                //Getbukkit中大于1.16.5(包括)二级域名是download.小于1.16.5二级域名是cdn
                 if (服务端类型 == 3){
                     //如果服务端类型=3运行此处的代码(开始)
-                    服务端下载链接 = "https://download.getbukkit.org/spigot/spigot-" + 服务端版本 + ".jar";
+                    if (!cdn){
+                        服务端下载链接 = "https://download.getbukkit.org/spigot/spigot-" + 服务端版本 + ".jar";
+                    }else {
+                        服务端下载链接 = "https://cdn.getbukkit.org/spigot/spigot-" + 服务端版本 + ".jar";
+                    }
                     服务端名称 = "spigot-" + 服务端版本 + ".jar";
                     //如果服务端类型=3运行此处的代码(结束)
                 }else{
                     //如果服务端类型=4运行此处的代码(开始)
-                    服务端下载链接 = "https://download.getbukkit.org/craftbukkit/craftbukkit-" + 服务端版本 + ".jar";
+                    if (!cdn){
+                        服务端下载链接 = "https://download.getbukkit.org/craftbukkit/craftbukkit-" + 服务端版本 + ".jar";
+                    }else {
+                        服务端下载链接 = "https://cdn.getbukkit.org/craftbukkit/craftbukkit-" + 服务端版本 + ".jar";
+                    }
                     服务端名称 = "craftbukkit-" + 服务端版本 + ".jar";
                     //如果服务端类型=4运行此处的代码(结束)
                 }
@@ -63,7 +74,16 @@ public class ServerDownloadEr {
             throw new RuntimeException(e);
         }
         //使用Wget下载服务端
-        System.out.println("下载完成后,可在服务端所在目录运行命令java -jar " + 服务端名称 + "运行服务端.");
-        System.exit(233);
+        System.out.println("下载完成后,输入true启动服务端,也可在服务端所在目录运行命令java -jar " + 服务端名称 + "运行服务端.");
+        boolean Start = 要求输入.nextBoolean();
+        if (Start){
+            try {
+                Runtime.getRuntime().exec("cmd /k start java -jar " + 服务端名称 );
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }else{
+            System.exit(233);
+        }
     }
 }
