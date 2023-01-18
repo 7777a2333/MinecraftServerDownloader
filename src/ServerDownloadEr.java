@@ -8,7 +8,9 @@ public class ServerDownloadEr {
         System.out.println("服务端下载器  作者:哔哩哔哩@7777a2333");
         System.out.println("开源地址:https://github.com/7777a2333/MinecraftServerDownloader");
         System.out.println("采用GNU GPLv3协议分发,并含有附加条款");
-        System.out.println("原版服务端使用了mcjars.com跳转至Mojang服务器");
+        System.out.println("原版服务端Mojang源使用了mcjars.com跳转至Mojang服务器");
+        System.out.println("原版服务端国内源由BMCLAPI和MCBBS提供高速下载服务.BMCLAPI为公益服务.赞助BMCLAPI可以帮助作者提供更好的高速下载服务");
+        System.out.println("赞助BMCLAPI:https://afdian.net/a/bangbang93");
         System.out.println("CraftBukkit和Spigot使用了Getbukkit服务器下载");
         //显示关于
         System.out.println("-----------------服务端支持版本-----------------");
@@ -16,7 +18,6 @@ public class ServerDownloadEr {
         System.out.println("Purpur服务端       :1.14.1及以上");
         System.out.println("Spigot服务端       :1.0.0及以上");
         System.out.println("CraftBukkit服务端  :1.0.0及以上");
-
         System.out.println("---------------------------------------------");
         //显示各个服务端支持版本
         Scanner 要求输入 = new Scanner(System.in);
@@ -27,13 +28,27 @@ public class ServerDownloadEr {
         System.out.println("1   原版服务端   2 Purpur服务端(Parper分支)  3   Spigot服务端   4 CarftBukkit服务端");
         int 服务端类型 = 要求输入.nextInt();
         //要求输入服务端序号,并且放进"服务端类型"int变量内
-        String 服务端下载链接;
-        String 服务端名称;
+        String 服务端下载链接 = null;
+        String 服务端名称 = null;
         //声明变量
         if (服务端类型 == 1) {
             //如果服务端类型=1运行此处的代码(开始)
-            服务端下载链接 = "https://www.mcjars.com/get/vanilla-" + 服务端版本 + ".jar";
-            服务端名称 = 服务端版本 + ".jar";
+            System.out.println("1 Mojang源 2 BMCLAPI源 3 MCBBS源");
+            int 下载源 = 要求输入.nextInt();
+            //要求输入下载源编号
+            if (下载源 == 1){
+                服务端下载链接 = "https://www.mcjars.com/get/vanilla-" + 服务端版本 + ".jar";
+                服务端名称 = 服务端版本 + ".jar";
+                //官方源
+            } else {
+                if (下载源 == 2){
+                    服务端下载链接 = "https://bmclapi2.bangbang93.com/version/" + 服务端版本 + "/server";
+                }else {
+                    服务端下载链接 = "https://download.mcbbs.net/version/" + 服务端版本 + "/server";
+                }
+                服务端名称 = "server";
+            }
+
             //如果服务端类型=1运行此处的代码(结束)
         } else {
             if (服务端类型 == 2) {
