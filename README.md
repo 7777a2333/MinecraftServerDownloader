@@ -10,5 +10,6 @@ Windows Jdk17及以上版本
 # 懒人版
 可下载“普通版.zip”，解压后运行“启动.bat”（确保你以符合上述要求）
 # 许可证
-采用GNU GPLv3协议分发
-
+该程序在 [GPL v3](https://www.gnu.org/licenses/gpl-3.0.html) 下分发，附带附加条款。
+附加条款（依据 GPLv3 协议第七条）
+你**不得**移除本程序所显示的版权声明。[依据 GPLv3， 7（b）.]
