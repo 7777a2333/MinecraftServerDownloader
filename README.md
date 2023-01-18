@@ -1,5 +1,6 @@
 # Minecraft服务端下载器
 这是一个命令行Minecraft服务端下载器，可下载原版，Purpur（Parpar分支）Spigot和CraftBukkit服务端
+欢迎大家丢PR和issues过来
 # 要求
 Windows Jdk17及以上版本
 # 用法
