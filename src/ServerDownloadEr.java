@@ -24,7 +24,7 @@ public class ServerDownloadEr {
         //要求输入服务端版本,并保存到"服务端版本"String变量内
 
         System.out.println("输入你要下载的服务端:(填序号)");
-        System.out.println("1   原版服务端   2 Purpur服务端(Parper分支)  3   Spigot服务端   4 CraftBukkit服务端");
+        System.out.println("1   原版服务端   2 Purpur服务端(Paper分支)  3   Spigot服务端   4 CraftBukkit服务端");
         int 服务端类型 = 要求输入.nextInt();
         //要求输入服务端序号,并且放进"服务端类型"int变量内
 
@@ -131,7 +131,7 @@ public class ServerDownloadEr {
         //显示关于
     }
     public static void 版本(){
-        System.out.println("版本:1.4.0\n" +
-                "编译时间: 2022/1/19 22:04");
+        System.out.println("版本:1.4.1\n" +
+                "编译时间: 2022/1/19 22:15");
     }
 }
