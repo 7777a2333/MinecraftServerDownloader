@@ -9,6 +9,7 @@ Windows Jdk17及以上版本
 [Wget for Windows](https://github.com/webfolderio/wget-windows)
 ### 懒人版
 可下载“普通版.zip”，解压后运行“启动.bat”（确保你以符合上述要求）
+使用的开源项目:[webfolderio/wget-windows](https://github.com/webfolderio/wget-windows)
 ### 许可证
 该程序在 [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html) 下分发
 
