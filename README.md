@@ -1,11 +1,24 @@
 ### Minecraft服务端下载器
-这是一个命令行Minecraft服务端下载器，可下载原版，Purpur（Parpar分支）Spigot和CraftBukkit服务端
+这是一个命令行Minecraft服务端下载器，可下载原版，Purpur（Parpar分支）Spigot和CraftBukkit “墨端”服务端
+
+备注：“墨端”支持Spigot插件和Forge模组
+
 原版可使用3种镜像站 Mojang BMCLAPI MCBBS
+
 原版服务端Mojang源使用了mcjars.com跳转至Mojang服务器
+
 原版服务端国内源由BMCLAPI和MCBBS提供高速下载服务.BMCLAPI为公益服务.赞助BMCLAPI可以帮助作者提供更好的高速下载服务
+
 赞助BMCLAPI:https://afdian.net/a/bangbang93
+
 CraftBukkit和Spigot使用了Getbukkit服务器下载
+
+“墨端”使用了官网api
+
+注意：“墨端”只支持1.12.2和1.16.5
+
 欢迎大家丢PR和issues过来
+
 ### 要求
 Windows Jdk17及以上版本
 ### 用法
