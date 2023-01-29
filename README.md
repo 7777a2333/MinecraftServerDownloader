@@ -1,4 +1,4 @@
-# 近期无BUG反馈不会更新
+# 此版本暂时停止积极维护.
 
 ### Minecraft服务端下载器
 这是一个命令行Minecraft服务端下载器，可下载原版，Purpur（Parpar分支）Spigot和CraftBukkit “墨端”服务端
