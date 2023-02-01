@@ -1,4 +1,5 @@
-# 此版本暂时停止积极维护.
+# 此分支停止维护.新版请见main分支
+https://github.com/7777a2333/MinecraftServerDownloader/tree/main
 
 ### Minecraft服务端下载器
 这是一个命令行Minecraft服务端下载器，可下载原版，Purpur（Parpar分支）Spigot和CraftBukkit “墨端”服务端
