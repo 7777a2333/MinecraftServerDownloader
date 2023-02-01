@@ -1,4 +1,4 @@
-# 此版本暂时停止积极维护.
+# 老版请见Java分支
 
 ### Minecraft服务端下载器
 这是一个命令行Minecraft服务端下载器，可下载原版，Purpur（Parpar分支）Spigot和CraftBukkit “墨端”服务端
@@ -21,10 +21,8 @@ CraftBukkit和Spigot使用了Getbukkit服务器下载
 
 欢迎大家丢PR和issues过来
 
-### 要求
-Windows Jdk17及以上版本
 ### 用法
-可下载编译好的Jar版本，在Jar所在目录运行java -jar ServerDownloadEr.jar 运行。
+可下载编译好的exe版本，在exe所在目录运行ServerDownloadEr.exe运行。
 运行时请在运行目录放上Wget.exe
 [Wget for Windows](https://github.com/webfolderio/wget-windows)
 ### 懒人版
