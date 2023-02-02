@@ -26,12 +26,9 @@ MohistMC FabricMC使用了官网api
 欢迎大家丢PR和issues过来
 
 ### 用法
-可下载编译好的exe版本，在exe所在目录运行ServerDownloadEr.exe运行。
-运行时请在运行目录放上Wget.exe
-[Wget for Windows](https://github.com/webfolderio/wget-windows)
-### 懒人版
-可下载“default.zip”，解压后运行“启动.bat”（确保你以符合上述要求）
-使用的开源项目:[webfolderio/wget-windows](https://github.com/webfolderio/wget-windows)
+可下载编译好的exe版本，双击运行!
+
+
 ### 许可证
 该程序在 [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html) 下分发
 
