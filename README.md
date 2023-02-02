@@ -1,8 +1,10 @@
-# 老版请见Java分支
+
 
 ### Minecraft服务端下载器
-这是一个命令行Minecraft服务端下载器，可下载原版，Purpur（Parpar分支）Spigot和CraftBukkit “墨端”服务端
 
+
+这是一个命令行Minecraft服务端下载器，可下载原版，Purpur（Parpar分支）Spigot和CraftBukkit “墨端”服务端
+**老版请见Java分支**
 ### 使用的API
 
 原版可使用3种镜像站 Mojang BMCLAPI MCBBS
