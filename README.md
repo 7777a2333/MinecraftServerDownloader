@@ -1,4 +1,5 @@
-# 此分支停止维护.新版请见main分支
+# 此版本已归档且停止维护，新版本：https://github.com/7777a2333/MCServerDownloadEr
+## 此分支停止维护.新版
 https://github.com/7777a2333/MinecraftServerDownloader/tree/main
 
 ### Minecraft服务端下载器
