@@ -1,5 +1,5 @@
 
-
+# 此版本已归档并停止维护 新版本：https://github.com/7777a2333/MCServerDownloadEr
 ### Minecraft服务端下载器
 
 
